@@ -1,0 +1,33 @@
+{
+  "name": "node-eth",
+  "version": "1.0.0",
+  "description": "Simple interactions between raspi and eth",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "epoll": "^0.1.22",
+    "express": "^4.15.3",
+    "gpio": "^0.2.7",
+    "gps": "^0.4.7",
+    "node-raspi": "^1.0.1",
+    "node-rfid": "^1.0.7",
+    "onoff": "^3.2.2",
+    "pi-gpio": "0.0.8",
+    "rc522": "^0.2.0",
+    "rpi-gpio": "^0.8.1",
+    "rpi-leds": "0.0.3",
+    "serialport": "^7.0.2",
+    "web3": "0.18.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.0",
+    "nodemon": "^1.11.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon --exec babel-node raspi-node/index.js"
+  },
+  "author": "",
+  "license": "ISC"
+}
