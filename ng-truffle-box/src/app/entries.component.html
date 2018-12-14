@@ -1,0 +1,18 @@
+  <table class="table" ng-show="trackingEntries.length > 0">
+    <thead>
+      <tr>
+        <th scope="col">RFID</th>
+        <th scope="col">Latitude</th>
+        <th scope="col">Longitude</th>
+        <th scope="col">Timestamp</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let entry of trackingEntries">
+        <th scope="row">{{entry.Rfid}}</th>
+        <td>{{entry.Latitude}}</td>
+        <td>{{entry.Longitude}}</td>
+        <td>{{entry.Timestamp}}</td>
+      </tr>
+    </tbody>
+  </table>
